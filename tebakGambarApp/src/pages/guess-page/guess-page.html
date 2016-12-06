@@ -1,0 +1,32 @@
+<!-- Top Header -->
+<ion-header no-shadow>
+  <ion-toolbar no-margin>
+    <ion-title>
+      {{ user.score }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- End Top Header -->
+
+<!-- Main Content -->
+<ion-content padding class="mybackground">
+
+<div>
+<ion-grid>
+	<ion-row responsive-sm wrap>
+		<ion-col width-100>
+			<img src="../assets/img/000{{puzzle.question}}.jpg" class="main" /><br/><br/>
+			<ion-item>
+			<ion-input type="text" [(ngModel)]="answer" (keyup)="resetError()" placeholder="Answer" ></ion-input>
+			</ion-item>
+			<div *ngIf="error" class="answer-error">
+				<p><strong>Oops!</strong> Jawaban anda salah</p>
+			</div>
+			<button class="btn-submit" (click)="doAnswer()">Submit</button>
+		</ion-col>
+	</ion-row>
+</ion-grid>
+</div>
+  <img src="../assets/img/logo.png" class="main" />
+</ion-content>
+<!-- End Main Content -->

@@ -1,0 +1,27 @@
+<!-- Top Header -->
+<ion-header no-shadow>
+  <ion-toolbar>
+    <ion-title>
+      Pilih Level
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- End Top Header -->
+
+<!-- Main Content -->
+<ion-content padding class="mybackground">
+
+<div>
+<ion-grid>
+	<ion-row responsive-sm wrap>
+		<!-- Repeat Puzzle items -->
+		<ion-col width-20 *ngFor="let puzzle of puzzles; let i = index;" (click)="goToPage(puzzle)">
+			<img src="../assets/img/000{{ puzzle.question }}.jpg" />
+		</ion-col>
+		<!-- End Repeat Puzzle items -->
+	</ion-row>
+</ion-grid>
+</div>
+  <img src="../assets/img/logo.png" class="main" />
+</ion-content>
+<!-- End Main Content -->

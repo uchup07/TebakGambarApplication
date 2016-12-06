@@ -1,0 +1,37 @@
+page-result {
+	ion-toolbar {
+		.toolbar-content {
+			background-image:url('../../assets/img/score_frame.png');
+			background-repeat: no-repeat !important;
+			background-size: 122px 45px !important;
+			background-position: center center;
+			height: 45px;
+			line-height: 30px;
+			padding: 5px 10px 5px 20px;
+		}
+	}
+	.answer-success {
+		background: #dff0d8;
+		border:1px solid #d6e9c6;
+		border-radius: 20px;
+		color:#3c763d;
+		padding:5px 15px;
+		margin:10px auto;
+	}
+
+	.btn-submit {
+		background-color:transparent;
+		background-image:url('../../assets/img/button_blue.png');
+		background-repeat: no-repeat;
+		background-size: 128px 64px;
+		background-position: center center;
+		height: 64px;
+		width: 128px;
+		margin:50px auto;
+		display: block;
+		font-size: 120%;
+		color:#FFF;
+		font-weight: bold;
+
+	}
+}

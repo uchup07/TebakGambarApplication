@@ -1,0 +1,21 @@
+<!-- Top Header -->
+<ion-header no-shadow>
+  <ion-toolbar>
+    <ion-title>
+      Masukan Nama Anda
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- End Top Header -->
+
+<!-- Main Content -->
+<ion-content padding class="mybackground">
+
+<div class="username-input">
+<ion-item>
+    <ion-input type="text" [(ngModel)]="username" (keyup.enter)="doLogin()" placeholder="Username" ></ion-input>
+  </ion-item>
+</div>
+  <img src="../assets/img/logo.png" class="main" />
+</ion-content>
+<!-- End Main Content -->

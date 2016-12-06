@@ -1,0 +1,30 @@
+<!-- Top Header -->
+<ion-header no-shadow>
+  <ion-toolbar no-margin>
+    <ion-title>
+      {{ user.score }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- End Top Header -->
+
+<!-- Main Content -->
+<ion-content padding class="mybackground">
+
+<div>
+<ion-grid>
+	<ion-row responsive-sm wrap>
+		<ion-col width-100>
+			<img src="../assets/img/tini_happy.png" class="main" /><br/><br/>
+			
+			<div class="answer-success">
+				<p><strong>Selamat!</strong> Jawaban anda benar</p>
+			</div>
+			<button class="btn-submit" (click)="doNext()">Next</button>
+		</ion-col>
+	</ion-row>
+</ion-grid>
+</div>
+  <img src="../assets/img/logo.png" class="main" />
+</ion-content>
+<!-- End Main Content -->
